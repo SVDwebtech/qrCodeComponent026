@@ -14,9 +14,11 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    html {
+      /* 10/16 * 100 = 62.5%   >>>>   1rem = 10px  */
+      font-size: 62.5%;
+    }
 
     *,
     *::before,
@@ -25,14 +27,20 @@
       padding: 0;
       margin: 0;
     }
+
     body {
       box-sizing: inherit;
-       background-color: hsl(0, 0%, 93%);
+      background-color: hsl(212, 45%, 89%);
     }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
     /* font-family: 'Outfit', sans-serif; */
     
-    .solution {
-      margin: 2rem 0;
+    .container {
+      max-width: 37.5rem;
+      margin: 5rem auto 0;
     }
 
     .component {
@@ -40,63 +48,67 @@
       text-align: center;
 
       background-color: hsl(0, 0%, 100%);
-      border-radius: 1rem;
+      border-radius: 2rem;
 
       max-width: 90%;
       margin: 0 auto;
-      padding: 1rem 1rem 2rem 1rem;
-    }
-
-    .imageContainer {
-      margin-bottom: 1rem;
+      padding: 1.6rem 1.5rem 2rem 1.5rem;
     }
 
     .image {
-      max-width: 100%;
+      max-width: 98%;
       border-radius: 1rem;
+
+      margin-bottom: 2rem;
     }
        
     h3 {
       color: hsl(217, 45%, 22%);
+      font-size: 2.2rem;
       font-weight: 700;
 
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
     }
 
     p {
       color: hsl(220, 15%, 55%);
-      font-size: 15px;
+      /* font-size: 15px; */
+      font-size: 1.5rem;
       font-weight: 400;
 
       margin-bottom: 1rem;
+    }
+
+    @media (min-width: 12450px) {
+     
     }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <!-- Improve your front-end skills by building projects
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level -->
   
   <div class="attribution">
+    Improve your front-end skills by building projects <br>
+
+    Scan the QR code to visit Frontend Mentor and take your coding skills to the next level <br>
+  
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Schalk van Dyk</a>.
   </div>
 
-  <section class="solution">
-    <div class="container">
-      <div class="component">
-        <div class="imageContainer">
-          <img class="image" src="/images/image-qr-code.png" alt="">
-        </div>
+  <div class="container">
+      <main class="component">
+        <img class="image" src="/images/image-qr-code.png" alt="">
         <h3>Improve your front-end <br>
             skills by building projects</h3>
         <p>Scan the QR Code to visit Frontend <br>
            Mentor and take your coding skills to <br>
            the next level</p>
-      </div>
-    </div>
-  </section>
+      </main>
+  </div>
 
 </body>
 </html>
